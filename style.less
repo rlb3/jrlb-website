@@ -1,0 +1,238 @@
+@import "less/bootstrap.less"; //import Bootsrrap
+
+/* === Reset Some Variables === */
+@baseFontSize: 14px;
+@baseLineHeight: 21px;
+
+/* === Basic Styles === */
+
+h3 {
+    color: @grayDark;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+blockquote {
+    border-left-color: @linkColor;
+}
+
+img.pull-left, img.pull-right {
+    margin: @gridGutterWidth / 2;
+    border: 3px solid @grayLight;
+}
+
+img.pull-left { margin-left: 0; }
+img.pull-right { margin-right: 0; }
+
+.blue {
+    color: @linkColor;
+}
+
+body {
+    background-image: url(img/groovepaper.png);
+}
+
+/* === Header Section === */
+
+header {
+    background-color: @grayDark;
+    background-image: url(img/dvsup.png);
+}
+
+#logo {
+    padding: @gridGutterWidth 0;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    
+    a {
+        color: @grayLighter;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+#navigation {
+
+    ul {
+        float: right;
+        margin-bottom: 0;
+        
+        a {
+            color: @grayLighter;
+            padding: 5px 5px;
+            margin: 29px 0 29px 10px;
+            
+            &:hover {
+                background-color: @grayLighter;
+                color: @grayDark;
+            }
+        }
+    }
+}
+
+/* === Slider === */
+
+#top-slider {
+    background-color: @grayDark;
+    background-image: url(img/dvsup.png);
+    height: 125px;
+    margin-bottom: 125px;
+    
+    h2, p {
+        color: @grayLighter;
+    }
+    
+    .slides_container, .slides_container div {
+        width: 940px - 10;
+        height: 240px;
+    }
+    
+    .slides_container {
+        border: 5px solid @gray;
+        background-color: @gray;
+        overflow: hidden;
+    }
+    
+    div.overlay-bottom {
+        width: 100%;
+        background: url(img/overlay-bg.png); //could be replaced by an rgba color, but this provides transparency support for older browsers
+        font-size: 30px;
+        position: relative;
+        top: 158px;
+        padding: 20px;
+        font-weight: 400;
+        height: auto;
+    }
+    
+    div.overlay-left, div.overlay-right {
+        width: 400px;
+        background: url(img/overlay-bg.png);
+        font-size: 30px;
+        bottom: 0;
+        padding: 20px;
+        font-weight: 400;
+        height: 200px;
+    }
+    
+    div.overlay-left {
+        
+    }
+    
+    div.overlay-right {
+        float: right;
+    }
+    
+    .slide-1 {
+        background-image: url(img/slide1.jpg);
+    }
+    .slide-2 {
+        background-image: url(img/slide2.jpg);
+    }
+    .slide-3 {
+        background-image: url(img/slide3.jpg);
+    }
+}
+
+.slider-pagination {
+    margin: 0 auto;
+    position: relative;
+    top: -25px;
+    z-index: 100;
+    width: 15px * 3; //the width of each pagination li * the number of slides
+    
+    li {
+        float: left;
+        margin: 0 2px;
+        overflow: hidden;
+        list-style: none;
+        
+        a {
+            display: block;
+            width: 9px;
+            height: 9px;
+            border-radius: 8px; //we don't need vendor prefixes!
+            border: 1px solid @grayDarker;
+            background-color: @grayLight;
+            overflow: hidden;
+            color: @grayLight;
+        }
+        
+        &.current a {
+            background-color: @grayLighter;
+            color: @grayLighter;
+        }
+    }
+}
+
+/* === Main Section === */
+
+#main-content {
+    clear: both;
+    .row {
+        margin-top: @gridGutterWidth;
+    }
+}
+
+#featured.row {
+    margin-top: @gridGutterWidth - 10;
+    
+    p {
+        text-align: justify;
+    }
+}
+
+#read-more.row {
+    margin-top: 0;
+}
+
+#headline {
+    border-top: 1px solid @gray;
+    text-align: center;
+    padding-top: @gridGutterWidth;
+    
+    h2 {
+        font-family: 'Arvo', serif;
+        color: @gray;
+        font-weight: 400;
+    }
+}
+
+/* === Sidebar Section === */
+
+#sidebar {
+    background-color: @white;
+    -webkit-box-shadow: 1px 1px 4px rgba(100, 100, 100, 0.50);
+    -moz-box-shadow:    1px 1px 4px rgba(100, 100, 100, 0.50);
+    box-shadow:         1px 1px 4px rgba(100, 100, 100, 0.50);
+    
+    input[type="text"], textarea {
+        width: @gridColumnWidth * 4 + @gridGutterWidth;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+}
+
+/* === Footer === */
+
+footer {
+    margin-top: @gridGutterWidth;
+    padding: @gridGutterWidth 0;
+    background-color: @grayDark;
+    background-image: url(img/dvsup.png);
+    color: @grayLighter;
+}
+
+#copyright {
+    font-size: 12px;
+}
+
+/* Photos from http://www.morguefile.com/ */
+/* Background textures from http://subtlepatterns.com/ */
