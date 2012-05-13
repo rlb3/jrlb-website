@@ -650,6 +650,7 @@ header{background-color:#333333;background-image:url(img/dvsup.png);}
 #top-slider .slide-1{background-image:url(img/slide1.jpg);}
 #top-slider .slide-2{background-image:url(img/slide2.jpg);}
 #top-slider .slide-3{background-image:url(img/slide3.jpg);}
+#top-slider .slide-4{background-image:url(img/slide4.jpg);}
 .slider-pagination{margin:0 auto;position:relative;top:-25px;z-index:100;width:45px;}.slider-pagination li{float:left;margin:0 2px;overflow:hidden;list-style:none;}.slider-pagination li a{display:block;width:9px;height:9px;border-radius:8px;border:1px solid #222222;background-color:#999999;overflow:hidden;color:#999999;}
 .slider-pagination li.current a{background-color:#eeeeee;color:#eeeeee;}
 #main-content{clear:both;}#main-content .row{margin-top:20px;}
